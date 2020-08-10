@@ -18,7 +18,7 @@ console.logz = (params, paramsinit) => {
     if (DEBUG)
         console.log(paramsinit || "", params);
 };
-var io = require('socket.io')(serv, {path:'/app/server/socket.io'});
+var io = require('socket.io')(serv, {});
 
 console.logz("Server started.");
 console.logz(`beging mangalos server in:` + port);
